@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+header {
+    background-color: #333; /* Darker gray header */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the navigation links */
+}
+
+nav li {
+    display: inline; /* Make list items horizontal */
+    margin: 0 10px; /* Add some spacing between links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Add some padding around links */
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto; /* Center the main content */
+    max-width: 800px; /* Set a maximum width for the content */
+    background-color: white; /* White background for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design (example) */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center; /* Center nav on smaller screens */
+    }
+    nav li {
+        display: block; /* Stack links vertically */
+        margin: 5px 0;
+    }
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+
+form label, form input, form textarea {
+    display: block; /* Make labels and form elements stack */
+    width: 100%; /* Make form elements take full width */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+form input, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
